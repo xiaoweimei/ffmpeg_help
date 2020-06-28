@@ -1,5 +1,12 @@
 # ffmpeg_help
 ffmpeg相关命令
+### 剪切视频
+```
+ffmpeg -ss 00:00:00 -t 00:00:30 -i test.mp4 -vcodec copy -acodec copy output.mp4
+* -ss 指定从什么时间开始
+* -t 指定需要截取多长时间
+* -i 指定输入文件
+```
 ### 合并视频
 - 首先建立视频片段文件inputs.txt
 - `cat inputs.txt`下面是inputs.txt里面的具体内容
